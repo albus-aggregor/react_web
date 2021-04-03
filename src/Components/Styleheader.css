@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 99999;
+	display: flex;
+	padding: 30px 0;
+}
+.header .nav1{
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 1080px;
+}
+.header .nav{
+	flex: 1;
+	display: flex;
+	flex-flow: row;
+	list-style-type: none;
+	justify-content: space-between;
+}
+.header .icon{
+	flex: 1;
+	color: #f05d7a;
+}
+.header .icon span{
+	color: #5b43e3;
+}
+.header .nav1 a{
+	text-decoration: none;
+}
+.header .nav li a{
+	text-decoration: none;
+	color: #bdbdbe;
+}
+.header .nav li a:hover{
+	color: #8772ff;
+}
+.nav2{
+	display: none;
+}
+.nav1 i{
+	display: none;
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+	.header .nav1{
+		width: 85%;
+	}
+	.nav2{
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px){
+	.header .nav1{
+		width: 600px;
+	}
+	.header .icon{
+		flex: .6;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 999px){
+	.header .nav1{
+		width: 80%;
+	}
+	.header .icon{
+		flex: .6;
+	}
+}
+@media only screen and (min-width: 551px) and (max-width: 767px){
+	.header{
+		flex-flow: column;
+	}
+	.header .nav1{
+		width: 80%;
+	}
+	.header .icon{
+		flex: .5;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 550px){
+	.header{
+		flex-flow: column;
+		padding: 20px 0;
+	}
+	.header .nav1{
+		width: 300px;
+	}
+	.header .icon{
+		font-size: .8em;
+	}
+	.nav1 .nav{
+		display: none;
+	}
+	.nav1 i{
+		display: block;
+		color: #5b43e3;
+	}
+	.nav2{
+		display: none;
+		background-color: #fff;
+		width: 50%;
+		margin: 0 auto;
+		position: absolute;
+		left: 40%;
+	}
+	.nav2 .nav22{
+		list-style-type: none;
+		border: 1px solid;
+		border-left-color: #5b43e3;
+		border-top-color: #5b43e3;
+		border-bottom-color: #f05d7a;
+		border-right-color: #f05d7a;
+		text-align: center;
+	}
+	.nav2 .nav22 li{
+		padding: 20px 0;
+	}
+	.nav2 .nav22 a{
+		text-decoration: none;
+		padding: 10px 0;
+		color: #000;
+	}
+	.nav2 .nav22 li:hover{
+		background-color: #f05d7a;
+		color: #7720fa;
+		box-shadow: 0 0 5px #f05d7a, 0 0 10px #f05d7a, 0 0 15px #f05d7a, 0 0 20px #f05d7a;
+	}
+}

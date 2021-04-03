@@ -1,0 +1,90 @@
+.a{
+	margin: 0 auto;
+	background-color: #f05d7a;
+	color: #fff;
+	padding: 100px 0 50px 0;
+}
+.a .a1{
+	display: flex;
+	flex-flow: column;
+	gap:30px;
+	margin: 0 auto;
+	width: 1080px;
+}
+.a1 .a2{
+	text-align:center;
+	letter-spacing: 2px;
+}
+.a1 .a3{
+	text-align:center;
+}
+.a1 .a3 h3{
+	font-size: 2em;
+}
+.a1 .a4{
+	text-align:center;
+}
+.a1 .a6{
+	text-align: center;
+}
+.a6 p{
+	color: #eeeced;
+	letter-spacing: 2;
+
+}
+.a4 .btn{
+	color: #fff;
+	padding: 15px 40px;
+	background-color: #8570fb;
+	border-radius: 25px;
+	border: none;
+	letter-spacing: 1;
+	font-size: 1em;
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+    .a .a1{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 768px){
+	.a .a1{
+		width: 600px;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 999px){
+	.a .a1{
+		width: 80%;
+	}
+}
+@media only screen and (min-width: 551px) and (max-width: 767px){
+	.a{
+		padding: 50px 0 25px 0;
+	}
+	.a .a1{
+		width: 80%;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 550px){
+	.a{
+		padding: 50px 0 25px 0;
+	}
+	.a .a1{
+		width: 300px;
+	}
+	.a1 .a2{
+		font-size: .8em;
+	}
+	.a1 .a3 h3 {
+    	font-size: 1.5em;
+	}
+	.a1 .a4 .btn{
+		font-size: .8em;
+		padding: 10px 20px;
+	}
+	.a5 h4{
+		font-size: .8em;
+	}
+	.a6 p{
+		font-size: .7em;
+	}
+}
